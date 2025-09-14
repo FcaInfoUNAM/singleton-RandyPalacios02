@@ -1,0 +1,11 @@
+¿cuál es el resultado de (config1 == config2)? ¿Por qué es importante este resultado? = true porque ahora los dos objetos apuntan a la misma instancia de 
+AppConfig. Esto es importante porque significa que ya no se crean configuraciones distintas en diferentes partes del programa, sino que todas comparten la misma.
+
+¿Por qué el campo instance se declara como static? = Porque al ser static la variable pertenece a la clase y no a un objeto en particular. 
+De esa forma se puede acceder a la misma instancia única desde cualquier lugar sin necesidad de crear objetos nuevos.
+
+¿Cuál es la principal desventaja de usar el enfoque de "Inicialización Ansiosa" (Eager Initialization) demostrado aquí? = la instancia se crea en cuanto se carga la clase, 
+aunque nunca se llegue a usar. Esto puede gastar memoria o recursos de manera innecesaria en aplicaciones más grandes.
+
+El patrón Singleton a veces es criticado. ¿Puedes pensar en una potencial desventaja, especialmente en aplicaciones grandes? = se convierte en algo parecido a una variable global. Eso puede hacer más difícil hacer pruebas al código 
+ y puede complicar el mantenimiento si el programa crece mucho.
